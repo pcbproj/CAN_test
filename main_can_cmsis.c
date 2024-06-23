@@ -1,4 +1,10 @@
-// for STM32F103C8 MCU
+/* 
+project for STM32F103C8 MCU
+
+Проект нужно адаптировать под SeggerStudio. Пока не собирается
+
+
+*/
 
 #include "main.h"
 
