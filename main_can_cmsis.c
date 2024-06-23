@@ -19,8 +19,7 @@ int main(void){
     can_init();
     while(1){
         can_send(data, sizeof(data));
-        while(counter<0xFFFF)
-            counter++;
+        while(counter<0xFFFF) counter++;
 		    counter = 0;
     }
 }
