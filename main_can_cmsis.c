@@ -94,3 +94,14 @@ uint8_t can_send(uint8_t * pData, uint8_t dataLength){
     if (CAN1->TSR & CAN_TSR_TXOK0) return 0;
     else return ((CAN1->ESR & CAN_ESR_LEC) >> 4);	//CAN_ESR_LEC_Pos); /* return Last error code */
 }
+
+
+
+// прием сообщений из CAN шины
+// опрос FIFO
+
+if ((CAN1-> CAN_RF0R & CAN_RF0R_FMP0) != 0){	
+	if(CAN1->CAN_RF1R_FMP1){
+	}
+
+}
